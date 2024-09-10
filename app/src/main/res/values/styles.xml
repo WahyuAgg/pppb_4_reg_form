@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="WhiteButton">
+        <item name="android:background">@drawable/sign_up_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@null</item>
+
+    </style>
+
+
+
+</resources>
