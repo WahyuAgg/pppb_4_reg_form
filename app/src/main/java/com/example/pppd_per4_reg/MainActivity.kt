@@ -1,7 +1,6 @@
 package com.example.pppd_per4_reg
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -38,12 +37,12 @@ class MainActivity : AppCompatActivity() {
             val username = usernameInput.text.toString()
             val password = passwordInput.text.toString()
 
-            // Menyusun pesan yang akan ditampilkan di Toast
+            // Menyusun pesan yang akan ditampilkan di Toast, dengan menggabungkan string input
             val message = "Email: $email\nFullname: $fullname\nUsername: $username\nPassword: $password"
 
-            // Meng-inflate layout untuk Toast kustom
+            // Meng-inflate layout Toast kustom
             val inflater = layoutInflater
-            // Meng-inflate layout dari file toast_layout.xml dan tidak menggunakan parent view
+            // Meng-inflate layout dari file toast_layout.xml
             val layout: View = inflater.inflate(R.layout.toast_layout, null)
 
             // Menetapkan teks pada TextView di layout Toast kustom
